@@ -1,0 +1,138 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello! How are you?", "Hello!", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me","No i dont have more questions, thank you of helping me!"],
+         "responses": ["Happy to help!", "You are welcome!", "My pleasure"],
+         "context": [""]
+        },
+		{"tag": "Identification",
+         "patterns": ["Who are you ?", "What are you ?"],
+         "responses": ["I am Ben and I will try to help you.", "I will be your assistant."],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How could you help me?", "What help could you provide me?", "How could you be helpful to me?","I am doing fine! Can you help me?"],
+         "responses": ["I can help you book an appointment with our clinic as well as answer to yor questions about the diseases that we treat."],
+         "context": [""]
+        },
+       {"tag": "appointment_request",
+         "patterns": ["leave an appointment with a doctor.", "I am fine thank you! I want to leave an appointment with a doctor.", "I want to book an appointment."],
+         "responses": ["Okay I will help you to book the appontment. Meanwhile can you provide me with your name Please? "],
+         "context": [""]
+        },
+        {"tag": "questions_to_patient",
+         "patterns": ["My name and surname is ","Here are my details ","Here is my name and surname "],
+         "responses": ["Perfect, I will try to find a convenient time for you with one of our doctors. If you have any question feel free to ask me."],
+         "context": [""]
+        },
+       {"tag": "questions_from_patient",
+         "patterns": ["I think I have a kidney problem, may I knwow what is this?", "I am having these symptoms , Do u think it will be a kidney problem?", "I having some problems like I dont know if its a kidney problem."],
+         "responses": ["Signs and symptoms of kidney disease are often nonspecific, meaning they can also be caused by other illnesses. "],
+         "context": [""]
+        },
+		{"tag": "_booking_questions_from_patient",
+         "patterns": ["When is convenient to see a doctor? ","When should i see a doctor.","When should I book an appointment with a doctor"],
+         "responses": ["Make an appointment with your doctor if you have any signs or symptoms of kidney disease."],
+         "context": [""]
+        },
+        {"tag": "appoinement_question",
+         "patterns": ["available day for my appointment? ","closest available time slot for an appointment?"],
+          "responses": ["Here in the system the closest timeslots are on tuesday morning and friday morning, tell me which is more convenient for you?"],
+         "context": [""]
+        },
+        {"tag": "appointment_time_preference",
+         "patterns": ["for me it is fine in morning.","morning is okay for me.","i am good in morning","better in morning"],
+         "responses": ["Alright I am booking your appointment with Dr Jack. If you have any other question I am here to help.","Okay, I am registering you name in the system with Doctor Brown . In case you have any other question feel free to do it."],
+         "context": [""]
+        },
+        {"tag": "appointment status",
+         "patterns": [" Is my appointment fixed?","everything fine with my appointment?"],
+         "responses": ["Yes, your appointment is fixed Tuesday morning.","Yes , see you next week."],
+         "context": [""]
+        },
+          {"tag": "request_email",
+          "patterns":["have  information in my personal email adress. Thank you!"," more sepcific informations in my email adress. Thank you! "],
+          "responses":["Okay perfect, could you please provide ,e with your email adress? Thank you!"],
+           "context": [""]
+        },
+          {"tag": "info_request_email",
+          "patterns":["Here is my email adress abx@gmail.com","This is my email, abc@kiit.ac.in"],
+          "responses":["I will provide you shortly with an email with all informations about our clinic"],
+           "context": [""]
+        },
+        {"tag": "clinic_care_team",
+         "patterns": ["benefits of  clinic ?", "clinic presentation","clinic description","info about organisation","services your clinic provide"],
+         "responses": ["At our Clinic, nephrologists and hypertension specialists work closely with other specialists, including cardiologists, endocrinologists, pharmacists, nurses, educators and dietitians to deliver high-quality, cost-effective care to people who have chronic kidney disease. This means that you're not getting just one opinion , you benefit from the knowledge and experience of each specialist."],
+         "context": [""]
+        },
+        {"tag": "clinic_departments",
+         "patterns": ["departments in this company", "departments that deal with this disease ?"],
+         "responses": ["Departments that deal with this condition are : Cardiovascular Medicine, Endocrinology, General Internal Medicine, Kidney Transplant Program, Nephrology and Hypertension, Transplant Center."],
+         "context": [""]
+        },
+       {"tag": "medical_condition_affecting_kidney",
+         "patterns": ["medical condition affect my kidney?", ""],
+         "responses": ["If you have a medical condition that increases your risk of kidney disease, your doctor is likely to monitor your blood pressure and kidney function with urine and blood tests during regular office visits."],
+         "context": [""]
+        },
+        {"tag": "causes_kidney_disease",
+         "patterns": ["causes of this disease","How  you get this disease.","What causes this disease?","why we get this disease",""],
+         "responses": ["Chronic kidney disease occurs when a disease or condition impairs kidney function, causing kidney damage to worsen over several months or years.","Diseases and conditions that cause chronic kidney disease include: Polycystic kidney disease, Prolonged obstruction of the urinary tract, from conditions such as enlarged prostate, kidney stones.","Diseases and conditions that cause chronic kidney disease include: Type 1 or type 2 diabetes, High blood pressure,Glomerulonephritis,Interstitial nephritis."],
+         "context": [""]
+        },
+		{"tag": "risk_factors",
+         "patterns": ["factors that increase the risk of kidney disease?","increase the chances for disease?","why there is risk for kidney disease"],
+         "responses": ["Factors that may increase your risk of chronic kidney disease include: Diabetes, High blood pressure, Heart and blood vessel (cardiovascular) disease.","Factors that may increase your risk of chronic kidney disease include: Smoking, Obesity, Older age.","The risk for this disease is increased if you have : Family history of kidney disease, Abnormal kidney structure, Older age.","Some factors that increase the risk for kidney disease are: Diabetes, Smoking, Obesity."],
+         "context": [""]
+        },
+        {"tag": "prevent_kidney_disease",
+         "patterns": ["prevent this disease?","lower the chances of getting this disease ?","lower the risk of this disease ","how to prevent this disease"," prevent kidney disease","get rid of this disease"],
+         "responses": ["To reduce your risk of developing kidney disease make sure to follow instructions on over-the-counter medications, taking too many pain relievers could lead to kidney damage and generally should be avoided if you have kidney disease. Ask your doctor whether these drugs are safe for you.","To lower your risk of developing kidney disease, you should  maintain a healthy weight. If you're at a healthy weight, work to maintain it by being physically active most days of the week. If you need to lose weight, talk with your doctor about strategies for healthy weight loss. Often this involves increasing daily physical activity and reducing calories.","To prevent yourself from developing a kidney disease you have to quit smoking. Cigarette smoking can damage your kidneys and make existing kidney damage worse. If you're a smoker, talk to your doctor about strategies for quitting smoking. Support groups, counseling and medications can all help you to stop.","To reduce the chances of having a kidney disease you need to manage your medical conditions with your doctor's help. If you have diseases or conditions that increase your risk of kidney disease, work with your doctor to control them. Ask your doctor about tests to look for signs of kidney damage."],
+         "context": [""]
+        },
+		{"tag": "doctors",
+         "patterns": ["doctors who treat this disease ","doctors who operate in this clinic","doctors of this clinic"],
+         "responses": ["The doctors that operate in our clinic are : Dr Brown, Dr Jack, Dr Iliri, Dr Genci and Dr Agroni"],
+         "context": [""]
+        },
+		{"tag": "invalid",
+         "patterns": ["Marry me","I love You","date me","chat with me","I am bored","coffe with me?", "have a dinner?","are you stupid"],
+         "responses": ["Please ask questions related to our clinic and the services we provide. Thank you!"],
+         "context": [""]
+        },
+		{"tag": "noans",
+         "patterns": ["why","how","when","I","you","here","there"],
+         "responses": ["Can't Understand Your Question","please elaborate your question"],
+         "context": [""]
+        },
+        {"tag": "name",
+         "patterns": ["what is your name?","what should I call you?"],
+         "responses": ["I am an AI bot and I will be your assisstant","Hey I am a bot and i will assist you."],
+         "context": [""]
+        },
+         {"tag": "about",
+         "patterns": ["how you doing?","how are you"],
+         "responses": ["I am doing fine.Thank you For Asking! How can I help you?"],
+         "context": [""]
+        },
+      {"tag": "hours",
+         "patterns": ["Opening hours of the clinic?","when clicnic opens"],
+         "responses": ["It is open from Monday-Saturday 9:00am-7:30pm"],
+         "context": [""]
+        }
+   ]
+}
